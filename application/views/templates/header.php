@@ -9,6 +9,8 @@
 
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="<?= base_url(); ?>assets/css/bootstrap.css">
+    <!-- OVERWRITE CSS -->
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/css/style.css">
     <!-- DARI INTERNET -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
