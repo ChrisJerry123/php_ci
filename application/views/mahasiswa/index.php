@@ -20,11 +20,12 @@
         </div>
     </div>
 
+    <!-- FORM CARI MAHASISWA -->
     <div class="row mt-3">
         <div class="col-md-6">
             <form action="" method="post">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Cari Data Mahasiswa" name="keyword">
+                    <input type="text" class="form-control" placeholder="Cari Data Mahasiswa" name="keyword" autocomplete="off">
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="submit">Cari</button>
                     </div>
@@ -32,10 +33,16 @@
             </form>
         </div>
     </div>
+    <!-- END FORM CARI MAHASISWA -->
 
     <div class="row mt-3">
         <div class="col-md-6">
             <h3>Daftar Mahasiswa</h3>
+            <?php if (empty($mahasiswa)) : ?>
+                <div class="alert alert-danger" role="alert">
+                    Data Mahasiswa tidak ditemukan
+                </div>
+            <?php endif; ?>
             <ul class="list-group">
                 <?php foreach ($mahasiswa as $row) : ?>
                     <li class="list-group-item">

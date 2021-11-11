@@ -18,17 +18,17 @@
                         <input type="hidden" name="id" value="<?= $mahasiswa['id'] ?>">
                         <div class="form-group">
                             <label for="nama">Nama</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Input Nama" name="nama" value="<?= $mahasiswa['nama']; ?>">
+                            <input type="text" class="form-control" id="nama" placeholder="Input Nama" name="nama" value="<?= $mahasiswa['nama']; ?>" autocomplete="off">
                             <small class="form-text text-danger"><?php echo form_error('nama') ?></small>
                         </div>
                         <div class="form-group">
                             <label for="nip">NIP</label>
-                            <input type="text" class="form-control" id="nip" placeholder="Input NIP" name="nip" value="<?= $mahasiswa['nip']; ?>">
+                            <input type="text" class="form-control" id="nip" placeholder="Input NIP" name="nip" value="<?= $mahasiswa['nip']; ?>" autocomplete="off">
                             <small class="form-text text-danger"><?php echo form_error('nip') ?></small>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email" placeholder="Input Email" name="email" value="<?= $mahasiswa['email']; ?>">
+                            <input type="text" class="form-control" id="email" placeholder="Input Email" name="email" value="<?= $mahasiswa['email']; ?>" autocomplete="off">
                             <small class="form-text text-danger"><?php echo form_error('email') ?></small>
                         </div>
                         <div class="form-group">

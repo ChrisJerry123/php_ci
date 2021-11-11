@@ -68,6 +68,9 @@ class Mahasiswa_model extends CI_Model
     {
         $keyword = $this->input->post('keyword', true);
         $this->db->like('nama', $keyword);
+        $this->db->or_like('jurusan', $keyword);    // didalam search bisa mencari jurusan yang sama
+        $this->db->or_like('nip', $keyword);        // didalam search bisa mencari nip yang sama
+        $this->db->or_like('email', $keyword);      // didalam search bisa mencari email yang sama
         return $this->db->get('mahasiswa')->result_array();
     }
 }
